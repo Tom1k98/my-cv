@@ -1,11 +1,8 @@
 import React from "react";
+import headerStyles from "./Header.module.scss";
 
 function Header() {
-  return (
-    <div>
-      <h1>Test</h1>
-    </div>
-  );
+  return <header className={headerStyles.header}>Tomáš Štorc</header>;
 }
 
 export default Header;
