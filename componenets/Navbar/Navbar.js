@@ -8,6 +8,9 @@ function Navbar() {
       <ul className={navbarStyles.links}>
         <li>About me</li>
         <li>Work experience</li>
+        <li>IT skills</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
       </ul>
     </nav>
   );

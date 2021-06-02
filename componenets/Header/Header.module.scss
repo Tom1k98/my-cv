@@ -4,7 +4,6 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
 
   div {
     flex-basis: 50%;
@@ -15,11 +14,27 @@
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
+    align-self: center;
   }
 
   h1 {
-    display: inline-block;
+    display: block;
     border-bottom: 3px solid black;
-    font-size: 5rem;
+    font-size: 12.7rem;
+    margin-left: 3rem;
+  }
+
+  .subtext {
+    font-size: 3.4rem;
+    margin-left: 3rem;
+  }
+  .textcontainer {
+    position: relative;
+  }
+
+  .textbox {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
   }
 }

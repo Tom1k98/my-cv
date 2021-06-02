@@ -1,7 +1,7 @@
 .navbar {
   border-bottom: 1px solid black;
-  height: 5rem;
   position: relative;
+  height: 6rem;
 
   ul {
     position: absolute;
@@ -11,8 +11,12 @@
   }
   li {
     list-style: none;
-    margin-right: 2rem;
+    margin-right: 3rem;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 2.8rem;
+
+    &:hover {
+      border-bottom: 2px solid black;
+    }
   }
 }
