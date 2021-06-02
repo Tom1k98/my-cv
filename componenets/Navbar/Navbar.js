@@ -1,5 +1,6 @@
 import React from "react";
 import navbarStyles from "./Navbar.module.scss";
+import Link from "next/link";
 
 function Navbar() {
   return (

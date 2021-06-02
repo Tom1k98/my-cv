@@ -1,7 +1,18 @@
 .navbar {
-  margin-bottom: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 5rem;
+  position: relative;
 
+  ul {
+    position: absolute;
+    right: 3rem;
+    top: 0;
+    padding: 1rem;
+  }
   li {
     list-style: none;
+    margin-right: 2rem;
+    display: inline-block;
+    font-size: 2rem;
   }
 }
