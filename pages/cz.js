@@ -1,17 +1,15 @@
 import React from "react";
 import Header from "../componenets/Header/Header";
 import Navbar from "../componenets/Navbar/Navbar";
-import AboutMe from "../componenets/AboutMe/AboutMe";
-function App() {
+function cz() {
   return (
     <div>
-      <Navbar />
+      <Navbar language="cz" />
       <div className="container">
-        <Header language="en" />
-        <AboutMe />
+        <Header language="cz" />
       </div>
     </div>
   );
 }
 
-export default App;
+export default cz;
