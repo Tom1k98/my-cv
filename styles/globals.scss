@@ -5,6 +5,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -16,6 +17,8 @@ a {
   box-sizing: border-box;
 }
 
-.container {
-  margin: 0rem 3rem;
+h2 {
+  font-size: 8.9rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
 }

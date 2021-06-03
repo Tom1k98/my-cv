@@ -8,8 +8,18 @@ function Navbar({ language }) {
     <nav className={navbarStyles.navbar}>
       <ul className={navbarStyles.links}>
         {language === "cz"
-          ? links.cz.map((link) => <li>{link.text}</li>)
-          : links.en.map((link) => <li>{link.text}</li>)}
+          ? links.cz.map((link) => (
+              <li>
+                {" "}
+                <Link href={link.link}>{link.text}</Link>
+              </li>
+            ))
+          : links.en.map((link) => (
+              <li>
+                {" "}
+                <Link href={link.link}>{link.text}</Link>
+              </li>
+            ))}
       </ul>
     </nav>
   );

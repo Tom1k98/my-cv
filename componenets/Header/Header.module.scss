@@ -4,7 +4,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-
+  margin: 4rem 3rem;
   div {
     flex-basis: 50%;
   }
@@ -15,13 +15,25 @@
     height: 100%;
     background-repeat: no-repeat;
     align-self: center;
+    background-size: contain;
   }
 
   h1 {
-    display: block;
+    display: inline-block;
     border-bottom: 3px solid black;
     font-size: 12.7rem;
     margin-left: 3rem;
+    margin-bottom: 1rem;
+    animation: textIn 0.5s;
+  }
+
+  @keyframes textIn {
+    from {
+      transform: scale(0.1);
+    }
+    to {
+      transform: scale(1);
+    }
   }
 
   .subtext {
@@ -36,5 +48,23 @@
     position: absolute;
     top: 30%;
     transform: translateY(-30%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    margin: 0;
+    div {
+      flex-basis: 100%;
+    }
+    h1 {
+      font-size: 5rem;
+      text-align: center;
+      position: relative;
+    }
+    .img {
+      display: block;
+    }
   }
 }

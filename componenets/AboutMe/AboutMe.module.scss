@@ -6,10 +6,21 @@ $background-color: #04009a;
   text-align: center;
   background-color: $background-color;
   width: 100%;
-  padding-top: 3rem;
+  padding: 1rem 0 8rem 0;
+  animation: slideLeft 0.5s ease-out;
+  @keyframes slideLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 
-  h2 {
-    font-size: 8.9rem;
-    font-weight: 700;
+  .abouttext {
+    width: 80%;
+    font-size: 3rem;
+    margin: 0 auto;
+    text-align: left;
   }
 }
