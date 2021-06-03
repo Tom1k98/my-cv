@@ -7,11 +7,9 @@ function cz() {
   return (
     <div>
       <Navbar language="cz" />
-      <div className="container">
-        <Header language="cz" />
-        <AboutMe language="cz" />
-        <Experience language="cz" />
-      </div>
+      <Header language="cz" />
+      <AboutMe language="cz" />
+      <Experience language="cz" />
     </div>
   );
 }

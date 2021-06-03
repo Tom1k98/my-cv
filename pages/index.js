@@ -7,8 +7,7 @@ function App() {
   return (
     <div>
       <Navbar />
-
-      <Header language="en" />
+      <Header />
       <AboutMe />
       <Experience />
     </div>
