@@ -1,3 +1,15 @@
 .experience {
   text-align: center;
+  .experienceflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 3rem;
+
+    div {
+      flex-basis: 100%;
+      border: 1px solid black;
+    }
+  }
 }
