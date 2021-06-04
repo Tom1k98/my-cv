@@ -23,7 +23,7 @@ export const experiences = {
       title: "Atos IT Solutions",
       date: "10/2020 – 05/2021",
       role: "ICT consultant",
-      dexcription:
+      description:
         "Administration and installation of SIEM systems (IBM QRadar, Splunk) Implementation of MS Active Directory Instalation of IBM ISIM",
     },
     {
@@ -52,7 +52,7 @@ export const experiences = {
       title: "Atos IT Solutions",
       date: "10/2020 – 05/2021",
       role: "ICT consultant",
-      dexcription:
+      description:
         "Adminstrace a instalace SIEM softwaru (IBM QRadar, Splunk) IInstalace a implementace MS Active Directory",
     },
     {
