@@ -24,7 +24,7 @@ function AboutMe({ language }) {
   return (
     <div ref={ref} className={aboutMeStyles.aboutme} name="aboutme">
       <h2 className={getInView && "aboutHeading"}>{getHeading}</h2>
-      <div className={aboutMeStyles.abouttext}>{getText}</div>
+      <div className={getInView && aboutMeStyles.abouttext}>{getText}</div>
     </div>
   );
 }
