@@ -1,0 +1,40 @@
+$innerColor: #04009a;
+
+.pbcontainer {
+  width: 70vw;
+  height: 4rem;
+  margin: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pbtext {
+  font-size: 2rem;
+  color: white;
+  align-self: center;
+  margin: 2rem;
+}
+
+.pbBar {
+  height: 100%;
+  width: 50vw;
+  background-color: white;
+  display: inline-block;
+}
+
+.pbBarInner {
+  height: 100%;
+  background-color: $innerColor;
+}
+
+@media only screen and (max-width: 768px) {
+  .pbcontainer {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 0;
+  }
+
+  .pbtext {
+    font-size: 1.5rem;
+  }
+}
