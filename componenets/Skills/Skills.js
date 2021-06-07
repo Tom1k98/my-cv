@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import skillsStyles from "./Skills.module.scss";
-import { heading } from "./skillsText";
+import { heading, skillsValue } from "./skillsText";
 
 const Skills = ({ language }) => {
   const [getHeading, setHeading] = useState();
