@@ -18,7 +18,24 @@ a {
 }
 
 h2 {
+  opacity: 0;
   font-size: 8.9rem;
   font-weight: 700;
   margin-bottom: 4rem;
+}
+
+.aboutHeading {
+  opacity: 0;
+  animation: fadeHeader 0.5s ease-in forwards;
+
+  @keyframes fadeHeader {
+    from {
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }

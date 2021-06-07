@@ -9,7 +9,7 @@ function AboutMe({ language }) {
   const [getInView, setInView] = useState(false);
 
   const { ref, inView } = useInView({
-    threshold: 0,
+    threshold: 0.4,
   });
 
   useEffect(() => {
@@ -22,12 +22,8 @@ function AboutMe({ language }) {
   }, [inView]);
 
   return (
-    <div
-      ref={ref}
-      className={getInView && aboutMeStyles.aboutme}
-      name="aboutme"
-    >
-      <h2>{getHeading}</h2>
+    <div ref={ref} className={aboutMeStyles.aboutme} name="aboutme">
+      <h2 className={getInView && "aboutHeading"}>{getHeading}</h2>
       <div className={aboutMeStyles.abouttext}>{getText}</div>
     </div>
   );
