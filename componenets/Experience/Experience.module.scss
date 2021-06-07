@@ -1,33 +1,35 @@
 .experience {
   text-align: center;
-  .experienceflex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
+}
+.experienceflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
 
-    .content {
-      flex: 0 0 34%;
-      border: 1px solid black;
-      -webkit-box-shadow: -4px 7px 16px 0px rgba(0, 0, 0, 0.68);
-      box-shadow: -4px 7px 16px 0px rgba(0, 0, 0, 0.68);
-      text-align: left;
-      padding: 2rem;
-      h3 {
-        font-size: 3rem;
-        font-weight: 300;
-      }
-
-      p {
-        font-size: 1.5rem;
-      }
-    }
+.content {
+  flex: 0 0 34%;
+  border: 1px solid black;
+  -webkit-box-shadow: -4px 7px 16px 0px rgba(0, 0, 0, 0.68);
+  box-shadow: -4px 7px 16px 0px rgba(0, 0, 0, 0.68);
+  text-align: left;
+  padding: 2rem;
+  h3 {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  p {
+    font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .content {
-    flex: 0 0 100%;
+    flex: 1 1 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
   }
 }

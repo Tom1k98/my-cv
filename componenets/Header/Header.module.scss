@@ -56,7 +56,7 @@
     flex-direction: column;
     margin: 0;
     div {
-      flex-basis: 100%;
+      flex: 1 1 100%;
     }
     h1 {
       font-size: 5rem;
@@ -66,5 +66,8 @@
     .img {
       display: block;
     }
+  }
+  .subtext {
+    margin-left: 0;
   }
 }
