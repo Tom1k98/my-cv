@@ -26,7 +26,7 @@ const Experience = ({ language }) => {
       <h2 className={getInView && "aboutHeading"}>{getHeader}</h2>
       <div className={expStyles.experienceflex}>
         {getExperience.map((exp) => (
-          <div className={expStyles.content}>
+          <div ref={ref} className={getInView && expStyles.content}>
             <h3>{exp.title}</h3>
             <p>{exp.date}</p>
             <p>{exp.role}</p>
