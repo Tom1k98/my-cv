@@ -1,7 +1,7 @@
 $innerColor: #04009a;
 
 .pbcontainer {
-  width: 70vw;
+  width: 100%;
   height: 3rem;
   margin: 4rem;
   display: flex;
@@ -17,7 +17,7 @@ $innerColor: #04009a;
 
 .pbBar {
   height: 100%;
-  width: 50vw;
+  width: 60%;
   background-color: white;
   display: inline-block;
 }
