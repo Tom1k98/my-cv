@@ -2,8 +2,8 @@ $innerColor: #04009a;
 
 .pbcontainer {
   width: 70vw;
-  height: 4rem;
-  margin: 3rem;
+  height: 3rem;
+  margin: 4rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -30,8 +30,9 @@ $innerColor: #04009a;
 @media only screen and (max-width: 768px) {
   .pbcontainer {
     width: 100%;
-    padding: 1rem;
-    margin: 0 0;
+    padding: 1rem 1rem 1rem 0;
+    height: 3.5rem;
+    margin: 2rem 0;
   }
 
   .pbtext {
