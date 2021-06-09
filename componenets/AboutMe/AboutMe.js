@@ -4,8 +4,8 @@ import aboutMeStyles from "./AboutMe.module.scss";
 import { heading, text } from "./AboutMeText";
 
 function AboutMe({ language }) {
-  const [getHeading, setHeading] = useState();
-  const [getText, setText] = useState();
+  const [getHeading, setHeading] = useState(heading.en);
+  const [getText, setText] = useState(text.en);
 
   const { ref, inView } = useInView({
     threshold: 0.4,
@@ -19,7 +19,7 @@ function AboutMe({ language }) {
 
   return (
     <div ref={ref} className={aboutMeStyles.aboutme} name="aboutme">
-      <h2 className={inView && "aboutHeading"}>{getHeading}</h2>
+      <h2 className={inView ? "aboutHeading" : 0}>{getHeading}</h2>
       <div className={inView && aboutMeStyles.abouttext}>{getText}</div>
     </div>
   );

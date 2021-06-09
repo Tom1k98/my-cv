@@ -22,8 +22,8 @@ const Experience = ({ language }) => {
     <div ref={ref} name="experience" className={expStyles.experience}>
       <h2 className={inView && "aboutHeading"}>{getHeader}</h2>
       <div className={expStyles.experienceflex}>
-        {getExperience.map((exp) => (
-          <div ref={ref} className={inView && expStyles.content}>
+        {getExperience.map((exp, index) => (
+          <div key={index} ref={ref} className={inView && expStyles.content}>
             <h3>{exp.title}</h3>
             <p>{exp.date}</p>
             <p>{exp.role}</p>

@@ -19,8 +19,8 @@ const Skills = ({ language }) => {
     <div ref={ref} name="skills" className={skillsStyles.skills}>
       <h2 className={inView && "aboutHeading"}>{getHeading}</h2>
       <div className={skillsStyles.skillsBox}>
-        {skillsValue.map((skill) => (
-          <ProgressBar text={skill.name} value={skill.value} />
+        {skillsValue.map((skill, index) => (
+          <ProgressBar key={index} text={skill.name} value={skill.value} />
         ))}
       </div>
     </div>

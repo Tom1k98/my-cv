@@ -17,8 +17,8 @@ const Portfolio = ({ language }) => {
     <div ref={ref} name="portfolio" className={portfolioStyles.portfolio}>
       <h2 className={inView && "aboutHeading"}>Portfolio</h2>
       <div className={portfolioStyles.portfolioflex}>
-        {getPortfolio.map((port) => (
-          <a href="https://mtnetcode.com" target="_blank">
+        {getPortfolio.map((port, index) => (
+          <a key={index} href="https://mtnetcode.com" target="_blank">
             <div
               className={portfolioStyles.portfoliobox}
               style={{

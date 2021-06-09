@@ -11,8 +11,8 @@ function Navbar({ language }) {
   return (
     <nav className={navbarStyles.navbar}>
       <ul className={navbarStyles.links}>
-        {getLinks.map((link) => (
-          <li className={navbarStyles.link}>
+        {getLinks.map((link, index) => (
+          <li key={index} className={navbarStyles.link}>
             {" "}
             <Link href={link.link}>{link.text}</Link>
           </li>
