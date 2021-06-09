@@ -17,6 +17,11 @@ function Navbar({ language }) {
             <Link href={link.link}>{link.text}</Link>
           </li>
         ))}
+        <li>
+          <Link href={language === "cz" ? "/" : "cz"}>
+            {language === "cz" ? "EN" : "CZ"}
+          </Link>
+        </li>
       </ul>
     </nav>
   );

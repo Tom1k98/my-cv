@@ -24,6 +24,7 @@ const Portfolio = ({ language }) => {
             img={port.img}
             heading={port.heading}
             text={port.text}
+            language={language}
           />
         ))}
       </div>
