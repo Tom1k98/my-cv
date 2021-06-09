@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import portfolioStyles from "./Portfolio.module.scss";
+import PortfolioBox from "./PortfolioBox";
 import { portfolio } from "./portfolioText";
 
 const Portfolio = ({ language }) => {
@@ -18,15 +19,12 @@ const Portfolio = ({ language }) => {
       <h2 className={inView && "aboutHeading"}>Portfolio</h2>
       <div className={portfolioStyles.portfolioflex}>
         {getPortfolio.map((port, index) => (
-          <a key={index} href="https://mtnetcode.com" target="_blank">
-            <div
-              className={portfolioStyles.portfoliobox}
-              style={{
-                background: 'url("/img/mtnetcode.jpg")',
-                backgroundSize: "cover",
-              }}
-            ></div>
-          </a>
+          <PortfolioBox
+            key={index}
+            img={port.img}
+            heading={port.heading}
+            text={port.text}
+          />
         ))}
       </div>
     </div>

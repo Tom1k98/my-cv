@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import expStyles from "./Experience.module.scss";
 import { header, experiences } from "./experienceText";
 import { useInView } from "react-intersection-observer";
+import ExperienceBox from "./ExpoerienceBox";
 
 const Experience = ({ language }) => {
   const [getHeader, setHeader] = useState();
@@ -23,12 +24,13 @@ const Experience = ({ language }) => {
       <h2 className={inView && "aboutHeading"}>{getHeader}</h2>
       <div className={expStyles.experienceflex}>
         {getExperience.map((exp, index) => (
-          <div key={index} ref={ref} className={inView && expStyles.content}>
-            <h3>{exp.title}</h3>
-            <p>{exp.date}</p>
-            <p>{exp.role}</p>
-            <p>{exp.description}</p>
-          </div>
+          <ExperienceBox
+            key={index}
+            title={exp.title}
+            date={exp.date}
+            role={exp.role}
+            description={exp.description}
+          />
         ))}
       </div>
     </div>
