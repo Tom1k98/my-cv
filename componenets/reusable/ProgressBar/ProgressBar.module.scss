@@ -20,11 +20,21 @@ $innerColor: #04009a;
   width: 60%;
   background-color: white;
   display: inline-block;
+  overflow: hidden;
 }
 
 .pbBarInner {
   height: 100%;
   background-color: $innerColor;
+  animation: loadProgress 1s ease-in forwards;
+  @keyframes loadProgress {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -37,5 +47,6 @@ $innerColor: #04009a;
 
   .pbtext {
     font-size: 1.5rem;
+    margin: 1rem;
   }
 }

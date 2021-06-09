@@ -1,3 +1,47 @@
 .portfolio {
+  text-align: center;
+}
+.portfolioflex {
   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  a:link {
+    width: 34%;
+  }
+}
+.portfoliobox {
+  height: 40vh;
+  flex-basis: 34%;
+  box-shadow: 0px 15px 6px #00000029;
+  border: 1px solid #04009a;
+  border-radius: 10px;
+  position: relative;
+}
+
+.textwrapper {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 100%;
+
+  h4 {
+    color: white;
+    font-size: 4rem;
+  }
+  p {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .portfoliobox {
+    flex-basis: 100%;
+  }
+  .portfolioflex {
+    a:link {
+      width: 100%;
+    }
+  }
 }

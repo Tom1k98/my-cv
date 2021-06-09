@@ -10,6 +10,7 @@ const Experience = ({ language }) => {
 
   const { ref, inView } = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
 
   useEffect(() => {
@@ -17,16 +18,12 @@ const Experience = ({ language }) => {
     setExperiences(language === "cz" ? experiences.cz : experiences.en);
   }, [language]);
 
-  useEffect(() => {
-    inView && setInView(true);
-  }, [inView]);
-
   return (
     <div ref={ref} name="experience" className={expStyles.experience}>
-      <h2 className={getInView && "aboutHeading"}>{getHeader}</h2>
+      <h2 className={inView && "aboutHeading"}>{getHeader}</h2>
       <div className={expStyles.experienceflex}>
         {getExperience.map((exp) => (
-          <div ref={ref} className={getInView && expStyles.content}>
+          <div ref={ref} className={inView && expStyles.content}>
             <h3>{exp.title}</h3>
             <p>{exp.date}</p>
             <p>{exp.role}</p>

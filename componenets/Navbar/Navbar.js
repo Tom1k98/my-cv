@@ -12,7 +12,7 @@ function Navbar({ language }) {
     <nav className={navbarStyles.navbar}>
       <ul className={navbarStyles.links}>
         {getLinks.map((link) => (
-          <li>
+          <li className={navbarStyles.link}>
             {" "}
             <Link href={link.link}>{link.text}</Link>
           </li>

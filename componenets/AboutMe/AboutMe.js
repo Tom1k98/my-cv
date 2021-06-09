@@ -6,10 +6,10 @@ import { heading, text } from "./AboutMeText";
 function AboutMe({ language }) {
   const [getHeading, setHeading] = useState();
   const [getText, setText] = useState();
-  const [getInView, setInView] = useState(false);
 
   const { ref, inView } = useInView({
     threshold: 0.4,
+    triggerOnce: true,
   });
 
   useEffect(() => {
@@ -17,14 +17,10 @@ function AboutMe({ language }) {
     setText(language === "cz" ? text.cz : text.en);
   }, [language]);
 
-  useEffect(() => {
-    inView && setInView(true);
-  }, [inView]);
-
   return (
     <div ref={ref} className={aboutMeStyles.aboutme} name="aboutme">
-      <h2 className={getInView && "aboutHeading"}>{getHeading}</h2>
-      <div className={getInView && aboutMeStyles.abouttext}>{getText}</div>
+      <h2 className={inView && "aboutHeading"}>{getHeading}</h2>
+      <div className={inView && aboutMeStyles.abouttext}>{getText}</div>
     </div>
   );
 }
