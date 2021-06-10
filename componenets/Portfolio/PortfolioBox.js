@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from "react";
 import portfolioStyles from "./Portfolio.module.scss";
 import { btn } from "./portfolioText";
+import { useInView } from "react-intersection-observer";
+
 const PortfolioBox = ({ img, heading, text, language }) => {
   const [getBtnText, setBtnText] = useState();
   useEffect(() => {
     setBtnText(language === "cz" ? btn.cz : btn.en);
   });
+
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
   return (
-    <div className={portfolioStyles.portfoliobox}>
+    <div ref={ref} className={inView && portfolioStyles.portfoliobox}>
       <h4>{heading}</h4>
       <p className={portfolioStyles.text}>{text}</p>
       <div
