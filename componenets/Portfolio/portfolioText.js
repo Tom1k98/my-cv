@@ -17,5 +17,5 @@ export const portfolio = {
 
 export const btn = {
   en: "Check it out",
-  cz: "Vyzkoušet",
+  cz: "Podívat se",
 };
