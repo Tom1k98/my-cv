@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 2rem;
 }
 .portfoliobox {
@@ -49,6 +49,9 @@
   font-size: 2rem;
 }
 @media only screen and (max-width: 768px) {
+  .portfolioflex {
+    flex-wrap: wrap;
+  }
   .portfoliobox {
     flex-basis: 100%;
   }
