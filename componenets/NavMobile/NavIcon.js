@@ -12,6 +12,7 @@ const NavIcon = ({ open, setOpen }) => {
         fontSize="large"
         className={navMobileStyles.icon}
         onClick={handleClick}
+        style={{ display: "none" }}
       />
     </div>
   );

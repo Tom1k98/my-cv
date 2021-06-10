@@ -3,7 +3,7 @@ import portfolioStyles from "./Portfolio.module.scss";
 import { btn } from "./portfolioText";
 import { useInView } from "react-intersection-observer";
 
-const PortfolioBox = ({ img, heading, text, language }) => {
+const PortfolioBox = ({ img, heading, text, language, imgpos }) => {
   const [getBtnText, setBtnText] = useState();
   useEffect(() => {
     setBtnText(language === "cz" ? btn.cz : btn.en);
@@ -22,6 +22,7 @@ const PortfolioBox = ({ img, heading, text, language }) => {
         style={{
           backgroundImage: `url(${img})`,
           backgroundSize: "cover",
+          backgroundPosition: imgpos,
         }}
       ></div>
       <a href="https://mtnetcode.com" target="_blank">

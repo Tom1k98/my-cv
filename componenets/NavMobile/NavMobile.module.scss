@@ -1,4 +1,5 @@
 @mixin iconStyle {
+  display: block;
   position: fixed;
   right: 0;
   margin: 1rem;
@@ -24,7 +25,8 @@
   }
   li {
     list-style: none;
-    margin: 3rem;
+    margin: 4rem;
+    text-align: center;
   }
 }
 
@@ -33,16 +35,22 @@
   top: 50%;
   left: 50%;
   font-size: 3rem;
+  width: 100%;
   transform: translate(-55%, -50%);
 }
 
 .icon {
-  display: none !important;
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
   .icon {
-    @include iconStyle();
+    display: block !important;
+    position: fixed;
+    right: 0;
+    margin: 1rem;
+    z-index: 99;
+    transition: all 1s;
   }
   .iconClose {
     @include iconStyle();

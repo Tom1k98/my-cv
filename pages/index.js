@@ -13,8 +13,8 @@ function App() {
   return (
     <div>
       <Navbar />
-      {open && <NavMobile open={open} setOpen={setOpen} />}
       {!open && <NavIcon open={open} setOpen={setOpen} />}
+      {open && <NavMobile open={open} setOpen={setOpen} />}
       <Header />
       <AboutMe />
       <Experience />
