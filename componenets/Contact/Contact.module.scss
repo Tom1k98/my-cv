@@ -1,0 +1,17 @@
+$text-color: #ffffff;
+$background-color: #04009a;
+
+.contact {
+  background-color: $background-color;
+  color: $text-color;
+  text-align: center;
+  padding: 1rem 0 8rem 0;
+
+  p {
+    font-size: 2rem;
+  }
+  li {
+    list-style: none;
+    font-size: 2rem;
+  }
+}
