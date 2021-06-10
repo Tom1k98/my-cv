@@ -3,7 +3,7 @@ import navMobileStyles from "./NavMobile.module.scss";
 import navbarStyles from "../Navbar/Navbar.module.scss";
 import { links } from "../Navbar/NavbarText";
 import Link from "next/link";
-import CloseIcon from "@material-ui/icons/Close";
+import { Close } from "@material-ui/icons";
 
 function NavMobile({ language, open, setOpen }) {
   const [getLinks, setLinks] = useState([]);
@@ -12,7 +12,7 @@ function NavMobile({ language, open, setOpen }) {
   }, [language]);
   return (
     <nav className={navMobileStyles.nav}>
-      <CloseIcon
+      <Close
         className={navMobileStyles.iconClose}
         fontSize="large"
         onClick={() => setOpen(!open)}

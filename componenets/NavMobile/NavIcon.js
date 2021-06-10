@@ -1,5 +1,5 @@
 import React from "react";
-import MenuIcon from "@material-ui/icons/Menu";
+import { Menu } from "@material-ui/icons";
 import navMobileStyles from "./NavMobile.module.scss";
 const NavIcon = ({ open, setOpen }) => {
   const handleClick = (e) => {
@@ -8,7 +8,7 @@ const NavIcon = ({ open, setOpen }) => {
   };
   return (
     <div>
-      <MenuIcon
+      <Menu
         fontSize="large"
         className={navMobileStyles.icon}
         onClick={handleClick}
