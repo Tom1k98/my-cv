@@ -3,14 +3,14 @@ import portfolioStyles from "./Portfolio.module.scss";
 import { btn } from "./portfolioText";
 import { useInView } from "react-intersection-observer";
 
-const PortfolioBox = ({ img, heading, text, language, imgpos }) => {
+const PortfolioBox = ({ img, heading, text, language, imgpos, link }) => {
   const [getBtnText, setBtnText] = useState();
   useEffect(() => {
     setBtnText(language === "cz" ? btn.cz : btn.en);
   });
 
   const [ref, inView] = useInView({
-    threshold: 0.1,
+    threshold: 0,
     triggerOnce: true,
   });
   return (
@@ -25,7 +25,7 @@ const PortfolioBox = ({ img, heading, text, language, imgpos }) => {
           backgroundPosition: imgpos,
         }}
       ></div>
-      <a href="https://mtnetcode.com" target="_blank">
+      <a href={link} target="_blank">
         <div className={portfolioStyles.btn}>{getBtnText}</div>
       </a>
     </div>
