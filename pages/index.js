@@ -16,7 +16,6 @@ function App() {
       <Head>
         <title>Tomáš Štorc | Web developer and Linux Specialist</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <Navbar />
       {!open && <NavIcon open={open} setOpen={setOpen} />}
