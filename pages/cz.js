@@ -16,6 +16,7 @@ function cz() {
       <Head>
         <title>Tomáš Štorc | Web developer a Linux Specialista</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
       </Head>
       <Navbar language="cz" />
       {!open && <NavIcon open={open} setOpen={setOpen} />}
