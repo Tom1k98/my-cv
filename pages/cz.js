@@ -14,7 +14,7 @@ function cz() {
   return (
     <div>
       <Head>
-        <title>Tomáš Štorc | Web developer and Linux Specialist</title>
+        <title>Tomáš Štorc | Web developer a Linux Specialista</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar language="cz" />
