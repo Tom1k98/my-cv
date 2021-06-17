@@ -8,16 +8,12 @@ import Portfolio from "../componenets/Portfolio/Portfolio";
 import Contact from "../componenets/Contact/Contact";
 import NavMobile from "../componenets/NavMobile/NavMobile";
 import NavIcon from "../componenets/NavMobile/NavIcon";
-import Head from "next/head";
+import HeadLayout from "../componenets/HeadLayout";
 function cz() {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <Head>
-        <title>Tomáš Štorc | Web developer a Linux Specialista</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-      </Head>
+      <HeadLayout language="cz" />
       <Navbar language="cz" />
       {!open && <NavIcon open={open} setOpen={setOpen} />}
       {open && <NavMobile language="cz" open={open} setOpen={setOpen} />}
