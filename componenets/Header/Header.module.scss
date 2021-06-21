@@ -1,3 +1,4 @@
+$background-color: #04009a;
 .header {
   height: 95vh;
   display: flex;
@@ -11,7 +12,7 @@
   }
   h1 {
     display: inline-block;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid $background-color;
     font-size: 12.7rem;
     margin-left: 3rem;
     margin-bottom: 1rem;
