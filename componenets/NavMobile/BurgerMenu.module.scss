@@ -4,33 +4,34 @@
   background-color: black;
   margin: 0.3rem;
 }
-
-.menuwrapper {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 99;
-}
-.line1 {
-  @include lines;
-  transition: all 1s;
-  &.click1 {
-    transform: rotate(45deg) translateY(1.17rem);
+@media only screen and (max-width: 768px) {
+  .menuwrapper {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 99;
   }
-}
-
-.line2 {
-  @include lines;
-  transition: all 0.2s;
-  &.click2 {
-    transform: translateX(150%);
+  .line1 {
+    @include lines;
+    transition: all 1s;
+    &.click1 {
+      transform: rotate(45deg) translateY(1.17rem);
+    }
   }
-}
 
-.line3 {
-  @include lines;
-  transition: all 1s;
-  &.click3 {
-    transform: rotate(-45deg) translateY(-1.11rem);
+  .line2 {
+    @include lines;
+    transition: all 0.2s;
+    &.click2 {
+      transform: translateX(150%);
+    }
+  }
+
+  .line3 {
+    @include lines;
+    transition: all 1s;
+    &.click3 {
+      transform: rotate(-45deg) translateY(-1.11rem);
+    }
   }
 }
