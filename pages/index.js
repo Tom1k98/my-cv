@@ -16,7 +16,7 @@ function App() {
       <HeadLayout />
       <Navbar />
       <BurgerMenu open={open} setOpen={setOpen} />
-      {open && <NavMobile open={open} setOpen={setOpen} />}
+      <NavMobile open={open} setOpen={setOpen} />
       <Header />
       <AboutMe />
       <Experience />

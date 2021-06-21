@@ -16,7 +16,7 @@ function cz() {
       <HeadLayout language="cz" />
       <Navbar language="cz" />
       <BurgerMenu open={open} setOpen={setOpen} />
-      {open && <NavMobile language="cz" open={open} setOpen={setOpen} />}
+      <NavMobile language="cz" open={open} setOpen={setOpen} />
       <Header language="cz" />
       <AboutMe language="cz" />
       <Experience language="cz" />
