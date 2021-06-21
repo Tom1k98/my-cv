@@ -7,7 +7,7 @@ import Experience from "../componenets/Experience/Experience";
 import Skills from "../componenets/Skills/Skills";
 import Portfolio from "../componenets/Portfolio/Portfolio";
 import Contact from "../componenets/Contact/Contact";
-import NavIcon from "../componenets/NavMobile/NavIcon";
+import BurgerMenu from "../componenets/NavMobile/BurgerMenu";
 import HeadLayout from "../componenets/HeadLayout";
 function App() {
   const [open, setOpen] = useState(false);
@@ -15,7 +15,7 @@ function App() {
     <div>
       <HeadLayout />
       <Navbar />
-      {!open && <NavIcon open={open} setOpen={setOpen} />}
+      <BurgerMenu open={open} setOpen={setOpen} />
       {open && <NavMobile open={open} setOpen={setOpen} />}
       <Header />
       <AboutMe />
