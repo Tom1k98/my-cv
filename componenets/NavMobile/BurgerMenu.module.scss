@@ -15,7 +15,7 @@
   @include lines;
   transition: all 1s;
   &.click1 {
-    transform: rotate(45deg) translateY(1.15rem);
+    transform: rotate(45deg) translateY(1.17rem);
   }
 }
 
@@ -31,6 +31,6 @@
   @include lines;
   transition: all 1s;
   &.click3 {
-    transform: rotate(-45deg) translateY(-1.15rem);
+    transform: rotate(-45deg) translateY(-1.11rem);
   }
 }
