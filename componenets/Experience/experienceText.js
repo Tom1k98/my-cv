@@ -7,7 +7,7 @@ export const experiences = {
   en: [
     {
       title: "Aufeer design s.r.o.",
-      date: "09/2017-now",
+      date: "09/2017 - now",
       role: "IT specialist",
       description:
         "Linux server administration Support for Windows/Linux users computers",
@@ -36,7 +36,7 @@ export const experiences = {
   cz: [
     {
       title: "Aufeer design s.r.o.",
-      date: "09/2017-současnost",
+      date: "09/2017 - současnost",
       role: "IT specialista",
       description:
         "Správa serverů s OS Linux, support koncovým uživatelům s Linux a Windows stanicemi",
