@@ -5,9 +5,11 @@
   z-index: 98;
   position: fixed;
   transform: translateX(100%);
+  opacity: 0;
   transition: all 1s;
   &.open {
     transform: translateX(0);
+    opacity: 1;
   }
   li {
     list-style: none;
