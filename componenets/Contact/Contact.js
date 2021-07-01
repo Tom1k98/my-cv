@@ -38,7 +38,7 @@ const Contact = ({ language }) => {
       <a href="https://twitter.com/tomasstorc">
         <TwitterIcon fontSize="large" style={{ margin: "1rem" }} />
       </a>
-      <a href="https://github.com/Tom1k98">
+      <a href="https://github.com/tomasstorc">
         <GitHubIcon fontSize="large" style={{ margin: "1rem" }} />
       </a>
       <a href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-%C5%A1torc-745a0913a/">

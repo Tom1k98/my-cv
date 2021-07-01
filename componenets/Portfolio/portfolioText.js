@@ -12,7 +12,7 @@ export const portfolio = {
       imgpos: "center",
       heading: "My GitHub profile",
       text: "There is much more work to see. Unfortunately those project are not yet published to the world so feel free to explore my GitHub. You will find there some frontend work as well as some backend work",
-      link: "https://github.com/Tom1k98",
+      link: "https://github.com/tomasstorc",
     },
   ],
 
@@ -29,7 +29,7 @@ export const portfolio = {
       imgpos: "center",
       heading: "Můj profil na Githubu",
       text: "Na mém Githubu naleznete projekty, které zatím nejsou nikde k vidění na internetu. Naleznete zde jak práci na frontendu, tak i na backendu",
-      link: "https://github.com/Tom1k98",
+      link: "https://github.com/tomasstorc",
     },
   ],
 };
