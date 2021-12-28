@@ -5,6 +5,7 @@ export const heading = {
 
 export const skillsValue = [
   { name: "Linux", value: 80 },
+  { name: "MS Azure", value: 70 },
   { name: "HTML", value: 50 },
   { name: "CSS", value: 65 },
   { name: "JavaScript", value: 70 },
