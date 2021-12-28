@@ -7,7 +7,7 @@ export const experiences = {
   en: [
     {
       title: "Aufeer design s.r.o.",
-      date: "09/2017 - now",
+      date: "09/2017 - 08/2021",
       role: "IT specialist",
       description:
         "Linux server administration Support for Windows/Linux users computers",
@@ -28,15 +28,22 @@ export const experiences = {
     },
     {
       title: "Rockwell automation",
-      date: "06/2021 - now",
+      date: "06/2021 - 07/2021",
       role: "Application Engineer",
       description: "Node.JS programming TypeScript programming",
+    },
+    {
+      title: "Česká spořitelna a.s.",
+      date: "08/2021 - now",
+      role: "Service owner",
+      description:
+        "Administration of on-premise applications and Azure's environment",
     },
   ],
   cz: [
     {
       title: "Aufeer design s.r.o.",
-      date: "09/2017 - současnost",
+      date: "09/2017 - 08/2021",
       role: "IT specialista",
       description:
         "Správa serverů s OS Linux, support koncovým uživatelům s Linux a Windows stanicemi",
@@ -57,9 +64,15 @@ export const experiences = {
     },
     {
       title: "Rockwell automation",
-      date: "06/2021 - současnost",
+      date: "06/2021 - 07/2021",
       role: "Application Engineer",
       description: "Programovaní v NodeJS a typescriptu",
+    },
+    {
+      title: "Česká spořitelna a.s.",
+      date: "08/2021 - současnost",
+      role: "Service owner",
+      description: "Administrace on-premise aplikací a Azure prostředí",
     },
   ],
 };
