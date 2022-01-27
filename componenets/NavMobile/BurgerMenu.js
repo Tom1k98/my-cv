@@ -20,7 +20,6 @@ const BurgerMenu = ({ open, setOpen }) => {
 
   const handleClick = (e) => {
     setOpen(!open);
-    console.log("proc kurva");
   };
   return (
     <div className={bmenuStyles.menuwrapper} onClick={handleClick}>
