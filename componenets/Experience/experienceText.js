@@ -27,12 +27,6 @@ export const experiences = {
         "Administration and installation of SIEM systems (IBM QRadar, Splunk) Implementation of MS Active Directory Instalation of IBM ISIM",
     },
     {
-      title: "Rockwell automation",
-      date: "06/2021 - 07/2021",
-      role: "Application Engineer",
-      description: "Node.JS programming TypeScript programming",
-    },
-    {
       title: "Česká spořitelna a.s.",
       date: "08/2021 - now",
       role: "Service owner",
@@ -61,12 +55,6 @@ export const experiences = {
       role: "ICT consultant",
       description:
         "Adminstrace a instalace SIEM softwaru (IBM QRadar, Splunk) IInstalace a implementace MS Active Directory",
-    },
-    {
-      title: "Rockwell automation",
-      date: "06/2021 - 07/2021",
-      role: "Application Engineer",
-      description: "Programovaní v NodeJS a typescriptu",
     },
     {
       title: "Česká spořitelna a.s.",
