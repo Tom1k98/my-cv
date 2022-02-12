@@ -15,6 +15,7 @@
     display: inline-block;
     font-size: 2rem;
     height: 1005;
+    transition: all 0.1s ease-in;
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
       forwards;
     @keyframes tracking-in-expand {

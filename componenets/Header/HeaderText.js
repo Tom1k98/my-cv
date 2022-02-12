@@ -1,4 +1,4 @@
 export const subtext = {
-  en: "Linux specialist and JavaScript developer",
-  cz: "Linux specialista a JavaScript vývojář",
+  en: "LAzure administrator and JavaScript developer",
+  cz: "Azure administrátor a JavaScript vývojář",
 };
