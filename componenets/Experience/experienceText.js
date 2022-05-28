@@ -31,7 +31,7 @@ export const experiences = {
       date: "08/2021 - now",
       role: "Service owner",
       description:
-        "Administration of on-premise applications and Azure's environment",
+        "Administration of on-premise applications and Azure's environment. Implementation of GitHub Actions. Development of frontend application with React",
     },
   ],
   cz: [
@@ -60,7 +60,8 @@ export const experiences = {
       title: "Česká spořitelna a.s.",
       date: "08/2021 - současnost",
       role: "Service owner",
-      description: "Administrace on-premise aplikací a Azure prostředí",
+      description:
+        "Administrace on-premise aplikací a Azure prostředí. Implementace GitHub Actions. Vývoj Frotnendu pomocí Reactu",
     },
   ],
 };
