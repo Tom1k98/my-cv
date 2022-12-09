@@ -28,10 +28,16 @@ export const experiences = {
     },
     {
       title: "Česká spořitelna a.s.",
-      date: "08/2021 - now",
+      date: "08/2021 - 08/2022",
       role: "Service owner",
       description:
         "Administration of on-premise applications and Azure's environment. Implementation of GitHub Actions. Development of frontend application with React",
+    },
+    {
+      title: "Česká spořitelna a.s.",
+      date: "09/2022 - now",
+      role: "Developer",
+      description: "development of applications in React + Redux.",
     },
   ],
   cz: [
@@ -58,10 +64,16 @@ export const experiences = {
     },
     {
       title: "Česká spořitelna a.s.",
-      date: "08/2021 - současnost",
+      date: "08/2021 - 08/2022",
       role: "Service owner",
       description:
         "Administrace on-premise aplikací a Azure prostředí. Implementace GitHub Actions. Vývoj Frotnendu pomocí Reactu",
+    },
+    {
+      title: "Česká spořitelna a.s.",
+      date: "09/2022 - současnost",
+      role: "Developer",
+      description: "Vývoj frontend aplikací v Reactu = Reduxu",
     },
   ],
 };

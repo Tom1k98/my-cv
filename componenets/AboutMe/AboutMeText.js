@@ -4,6 +4,6 @@ export const heading = {
 };
 
 export const text = {
-  en: "My name is Tomáš and i have been working as a Linux adminstrator for four years. I have also experience in automation, mostly with Python. I am also interested in cloud administration, especially Azure. I have also started to study at Unicorn University where i am learning about web development which is something i like to do at my free time. ",
-  cz: "Jmenuji se Tomáš a pracoval jsem 4 roky jako Linux specialista. Dále mám zkušenost s automatizací, kde používám především Python. Ve své současné práci spravuji Azure prostředí. Minulý rok jsem také začal studovat na Unicorn University obor softwarový vývoj, kterému se rád věnuji ve svém volném čase. ",
+  en: "My name is Tomáš and i am fully into development. I have experience from term projects at Unniversity. On frontend we use React with Redux and Express.js and sometimes NestJs on backend. I mainly do frontend at my work. I am using React and Redux combo. I laso got little bit of experience on backend which is wriitten in Java. At my free time i am mainly focusing to gain experience with Spring Boot.",
+  cz: "Jmenuji se Tomáš a v současné době se naplno věnuji vývoji. Ze školy, mám zkušenosti ze semestrálních projektů, kde využíváme na frontendu React + Redux a na backendu Express.js nebo NestJS. V práci se věnuji především tvorbě frontnedu pomocí Reactu a Reduxu, malé zkušenosti z práce mám i s úpravou kódu na backendu psaného v Javě. Ve volném čase se snažím více proniknout do Spring Bootu.",
 };
